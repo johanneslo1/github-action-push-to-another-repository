@@ -64,8 +64,8 @@ COMMIT_MESSAGE="${COMMIT_MESSAGE/ORIGIN_COMMIT/$ORIGIN_COMMIT}"
 COMMIT_MESSAGE="${COMMIT_MESSAGE/\$GITHUB_REF/$GITHUB_REF}"
 
 echo "git add:"
-git add public/dist/.
-git add public/mix-manifest.json
+git add --force public/dist/.
+git add --force public/mix-manifest.json
 
 echo "git status:"
 git status
