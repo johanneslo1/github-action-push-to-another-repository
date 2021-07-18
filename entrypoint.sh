@@ -76,4 +76,4 @@ git diff-index --quiet HEAD || git commit --message "$COMMIT_MESSAGE"
 
 echo "git push origin:"
 # --set-upstream: sets de branch when pushing to a branch that does not exist
-git push -f origin refs/heads/main:deployment
+git push -f origin "refs/heads/main:$TARGET_BRANCH"
