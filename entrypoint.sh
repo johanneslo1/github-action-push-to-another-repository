@@ -74,5 +74,6 @@ echo "git diff-index:"
 git diff-index --quiet HEAD || git commit --message "$COMMIT_MESSAGE"
 
 echo "git push origin:"
+echo "https://$USER_NAME:$API_TOKEN_GITHUB@github.com/$DESTINATION_REPOSITORY_USERNAME/$DESTINATION_REPOSITORY_NAME.git - $TARGET_BRANCH"
 # --set-upstream: sets de branch when pushing to a branch that does not exist
 git push "https://$USER_NAME:$API_TOKEN_GITHUB@github.com/$DESTINATION_REPOSITORY_USERNAME/$DESTINATION_REPOSITORY_NAME.git" --set-upstream "$TARGET_BRANCH"
